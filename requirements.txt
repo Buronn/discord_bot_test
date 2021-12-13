@@ -3,3 +3,5 @@ matplotlib
 discord
 requests
 python-dotenv
+pynacl
+ffmpeg-python
