@@ -11,4 +11,4 @@ services:
         ports:
             - "2222:2222"
         environment:
-          - BOT_TOKEN=
+          - BOT_TOKEN=${BOT_TOKEN}
