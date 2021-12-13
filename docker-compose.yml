@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+    python:
+        container_name: discord_bot
+        build: 
+            context: ./
+            dockerfile: Dockerfile 
+        command: tail -f /dev/null
+        volumes: 
+            - ./discordbot:/app
+        ports:
+            - "2222:2222"
+        environment:
+          - BOT_TOKEN=

@@ -1,0 +1,5 @@
+numpy
+matplotlib
+discord
+requests
+python-dotenv
