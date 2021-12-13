@@ -8,6 +8,7 @@ from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
 client = commands.Bot(command_prefix='.')
 
+bot_token = os.getenv('BOT_TOKEN')
 
 @client.command()
 async def load(ctx: Context, extension):
@@ -35,4 +36,4 @@ for filename in os.listdir('./cogs'):
 async def on_ready():
     print('Bot is ready lol XD')
 
-client.run('OTE4OTE0OTE5MjY3NzAwNzQ3.YbOMNQ.vWCeeOuoWNo0Je1fHQ1qQXgPLnE')
+client.run(bot_token)
